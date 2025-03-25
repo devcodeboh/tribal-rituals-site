@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rituals</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Explore Rituals</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="data.html">Rituals</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+  <main>
+    <input type="text" id="ritualName" placeholder="Ritual Name" />
+    <input type="text" id="tribeName" placeholder="Tribe or Region" />
+
+   
+    <div class="radio-group">
+      <label><input type="radio" name="ritualType" value="Initiation" checked /> Initiation</label>
+      <label><input type="radio" name="ritualType" value="Spiritual" /> Spiritual</label>
+      <label><input type="radio" name="ritualType" value="Punishment" /> Punishment</label>
+    </div>
+
+    <button onclick="addRitual()">Add Ritual</button>
+    <input type="text" id="searchInput" placeholder="Search rituals..." />
+    <section id="bookList" class="book-list"></section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Tribal Rituals. Designed by Bohdan Husiev</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
